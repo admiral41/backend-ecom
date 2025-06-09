@@ -69,3 +69,21 @@ exports.deleteNavigation = async (req, res) => {
     });
   }
 };
+
+// get all Navigation
+exports.getAllNavigation = async (req, res) => {
+  console.log("API hit");
+  try {
+    const data = await Navigation.find();
+    res.status(200).json({
+      success: true,
+      data
+    });
+  } catch (error) {
+    console.log(error)
+    res.status(400).json({
+      success: false,
+      error: error.message
+    });
+  }
+};
