@@ -7,6 +7,7 @@ const navigationController = require('../controller/navigationController');
 // @access  Public or Admin (adjust as needed)
 router.post('/', navigationController.createOrUpdateNavigation);
 
+router.get("/all", navigationController.getAllNavigation)
 // @route   GET /api/navigation/:slug
 // @desc    Get a navigation structure by slug
 // @access  Public
@@ -16,5 +17,7 @@ router.get('/:slug', navigationController.getNavigation);
 // @desc    Delete a navigation structure by slug
 // @access  Admin (protect as needed)
 router.delete('/:slug', navigationController.deleteNavigation);
+
+//get all Navigation 
 
 module.exports = router;
