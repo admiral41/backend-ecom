@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Slider = require('../model/sliderModel');
+const Slider = require('../models/sliderModel');
 const fs = require('fs');
 const path = require('path');
 const { sliderUpload } = require('../middleware/uploadMiddleware');

@@ -1,4 +1,4 @@
-const Navigation = require("../model/navigationModel");
+const Navigation = require("../models/navigationModel");
 const slugify = require("slugify");
 
 // Create or update navigation

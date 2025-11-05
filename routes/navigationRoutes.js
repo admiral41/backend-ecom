@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const navigationController = require('../controller/navigationController');
+const navigationController = require('../controllers/navigationController');
 
 // @route   POST /api/navigation
 // @desc    Create or update full navigation structure
